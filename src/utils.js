@@ -1,0 +1,1 @@
+import crypto from 'node:crypto'; export const id=p=>`${p}_${crypto.randomBytes(7).toString('hex').toUpperCase()}`; export const referralCode=()=>crypto.randomBytes(5).toString('base64url').toUpperCase(); export const money=n=>Number(n).toFixed(2); export const now=()=>new Date().toISOString();
